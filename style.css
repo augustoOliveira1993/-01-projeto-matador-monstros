@@ -1,0 +1,158 @@
+/* Geral */
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Areas dos posntos */
+
+.scores {
+  display: flex;
+}
+
+.score {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score h1 {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.life-bar {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #AAA;
+}
+
+.life-bar .life{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+.life-bar .life.danger {
+  background-color: red;
+}
+
+.life-bar .life.cuidado {
+  background-color: yellow;
+}
+
+/* Area de Resultado */
+
+.result {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.result .win {
+  color: green;
+}
+
+.result .lose {
+  color: red;
+}
+
+/* Area dos botoea (controle do jogo) */
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.new-game {
+  background-color: #4253af;
+  color: #FFF;
+}
+
+.win-game {
+  background-color: yellowgreen;
+  color: rgb(53, 50, 50);
+}
+
+.lose-game {
+  background-color: rgb(235, 18, 72);
+  color: white;
+}
+
+.attack {
+  background-color: #e51c23;
+  color: #FFF;
+}
+
+.especial-attack {
+  background-color: #FF9800;
+  color: #000;
+}
+
+.heal {
+  background-color: #259b24;
+  color: #FFF;
+}
+
+.give-up {
+  background-color: #BBB;
+  color: #000;
+}
+
+/* Area de logs */
+
+.logs ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logs ul li {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0px;
+  padding: 3px 0px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.player {
+  background-color: #4253AFAA;
+  color: #FFF;
+}
+
+.monster {
+  background-color: #e51c23AA;
+  color: #FFF;
+}
+
+.player-heal {
+  background-color: #00ff15aa;
+  color: #FFF;
+}
